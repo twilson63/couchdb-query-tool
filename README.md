@@ -1,7 +1,13 @@
 # Relaxing with Couchdb Query Tool
 
-This is a simple query tool for 
-couchdb.
+demo at https://couchdb-query.now.sh
+
+query tool for couchdb.
+
+```
+npm install
+npm start
+```
 
 ## How to query local couchdb databases
 
@@ -19,4 +25,3 @@ ngrok http 5984
 
 
 ## Enjoy!
-
