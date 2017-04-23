@@ -5,7 +5,7 @@ module.exports = {
   query (dispatch, getState) {
     const { url, path, method, body } = getState()
     let options = {}
-    dispatch({type: 'SET_ERROR', payload: ''})
+    dispatch({ type: 'SET_ERROR', payload: '' })
     if (method !== 'GET') {
       options = Object.assign(options, {
         method,
