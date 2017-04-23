@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "wzrd index.js --port 3000 --pushstate -- -t reactify"
+    "start": "wzrd index.js --port 3000 --pushstate -- -t reactify",
+    "build": "cp index.html build & cp tachyons.css build & browserify index.js -o build/index.js -t reactify & echo 'build complete...'"
   },
   "keywords": [],
   "author": "",

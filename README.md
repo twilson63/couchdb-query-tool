@@ -20,6 +20,7 @@ docker run -d -p 5984:5984 klaemo/couchdb:2.0-dev --with-haproxy --with-admin-pa
 Then you can make it available using ngrok
 
 ```
+npm i ngrok -g
 ngrok http 5984
 ```
 

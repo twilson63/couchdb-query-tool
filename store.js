@@ -3,6 +3,14 @@ const thunk = require('redux-thunk').default
 
 const store = createStore(
   combineReducers({
+    error (state = '', action) {
+      switch (action.type) {
+        case 'SET_ERROR':
+          return action.payload
+        default:
+          return state
+      }
+    },
     advanced (state = false, action) {
       switch (action.type) {
         case 'TOGGLE':
@@ -47,8 +55,6 @@ const store = createStore(
       switch (action.type) {
         case 'SET_RESULT':
           return JSON.stringify(action.payload, null, 2)
-        case 'SET_ERROR':
-          return action.payload
         default:
           return state
       }

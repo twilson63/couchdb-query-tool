@@ -150,6 +150,12 @@ const App = props => {
             Run Query
           </button>
         </div>
+        {props.error && (
+        <div className='w-100 pa4 ba b--red bg-light-gray red br2'>
+          <label className='db fw3 f3 mv2'>Error</label>
+          {props.error}
+        </div>
+            )}
         <pre className='w-100 ba pa4 code f5 bg-black-80 white'>
           <code>
             {props.result.toString()}
