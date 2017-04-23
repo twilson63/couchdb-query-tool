@@ -162,6 +162,22 @@ const App = props => {
           </code>
         </pre>
       </main>
+      <footer className='pa4 tc'>
+        <small>
+          Created by{' '}
+          <a className='link light-blue' target="_blank" href='https://twitter.com/twilson63'>
+            @twilson63
+          </a>
+          {' '}Check it out on{' '}
+          <a
+            className='link light-blue'
+            href='http://github.com/twilson63/couchdb-query-tool'
+            target="_blank"
+          >
+            Github
+          </a>
+        </small>
+      </footer>
     </div>
   )
 }
